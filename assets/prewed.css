@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+body{
+  background: url("background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin:0 80px;
+  padding-bottom: 70px;
+  font-family: monospace;
+}
+
+
+.column{
+  top: 200px;
+  left: 350px;
+  flex: 25%;
+  max-width: 100%;
+  padding: 0 5px;
+
+}
+.column img{
+  width: 30%;
+  height: 30%;
+  margin-top: 3px;
+  opacity: 0.9;
+  filter: grayscale(100%);
+  transition: all 0.3s;
+}
+.column img:hover{
+  opacity: 1;
+  filter: none;
+  cursor: pointer;
+}
+#sidehead{
+  color: floralwhite;
+  font-size: 25px;
+  margin-right: 160px;
+  float: left;
+  position: relative;
+  left: 1000px;
+}
+.header{
+    color: floralwhite;
+    font-size: 50px;
+    margin-right: 160px;
+    padding: 25px;
+    float: right;
+    transition: transform 0.2s;
+}
+
+.header:hover{
+  transform: scale(1.1);
+}
+  
+@media screen and (max-width: 800px) {
+.column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+a:link {
+  color: whitesmoke;
+  text-decoration: none;
+}
+/* visited link */
+a:visited {
+  color: floralwhite;
+}
+
+/* mouse over link */
+a:hover {
+  color: navajowhite;
+}
+
+/* selected link */
+a:active {
+  color: ghostwhite;
+}
+
